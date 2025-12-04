@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mac05\\source\\repos\\accounting system\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\mac05\\source\\repos\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\mac05\\source\\repos\\accounting system\\accounting system\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\mac05\\source\\repos\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.cs",
+              "RelativeDocumentMoniker": "accounting system\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "accounting system\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T03:46:00.095Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "accounting system\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.Designer.cs",
+              "RelativeToolTip": "accounting system\\Form1.Designer.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwGYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T01:49:22.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.cs",
+              "RelativeDocumentMoniker": "accounting system\\Form1.cs",
+              "ToolTip": "C:\\Users\\Mac05\\source\\repos\\accounting system\\accounting system\\Form1.cs",
+              "RelativeToolTip": "accounting system\\Form1.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAwIkAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-28T01:49:07.678Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
