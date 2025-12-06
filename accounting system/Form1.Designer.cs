@@ -36,6 +36,7 @@
             input_but = new Button();
             inorout_box = new ComboBox();
             list_but = new Button();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -79,6 +80,7 @@
             remark_box.TabIndex = 4;
             remark_box.Text = "備註";
             remark_box.TextAlign = HorizontalAlignment.Center;
+            remark_box.Click += remark_box_click;
             // 
             // type_box
             // 
@@ -115,18 +117,30 @@
             // list_but
             // 
             list_but.Font = new Font("Microsoft JhengHei UI", 20F);
-            list_but.Location = new Point(958, 855);
+            list_but.Location = new Point(1023, 855);
             list_but.Name = "list_but";
             list_but.Size = new Size(261, 75);
             list_but.TabIndex = 8;
             list_but.Text = "記帳紀錄";
             list_but.UseVisualStyleBackColor = true;
+            list_but.Click += list_but_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Microsoft JhengHei UI", 20F);
+            dateTimePicker1.Location = new Point(915, 484);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.RightToLeft = RightToLeft.No;
+            dateTimePicker1.Size = new Size(476, 75);
+            dateTimePicker1.TabIndex = 10;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 30F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(2306, 1372);
+            Controls.Add(dateTimePicker1);
             Controls.Add(list_but);
             Controls.Add(inorout_box);
             Controls.Add(input_but);
@@ -136,7 +150,8 @@
             Controls.Add(balance);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "記帳系統";
+            Click += remark_box_click;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,5 +166,6 @@
         private Button input_but;
         private ComboBox inorout_box;
         private Button list_but;
+        private DateTimePicker dateTimePicker1;
     }
 }

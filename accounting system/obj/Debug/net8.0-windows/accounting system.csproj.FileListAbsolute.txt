@@ -14,3 +14,36 @@ C:\Users\Mac05\source\repos\accounting system\accounting system\obj\Debug\net8.0
 C:\Users\Mac05\source\repos\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.pdb
 C:\Users\Mac05\source\repos\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.genruntimeconfig.cache
 C:\Users\Mac05\source\repos\accounting system\accounting system\obj\Debug\net8.0-windows\ref\accounting system.dll
+C:\Users\Mac04\Desktop\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.exe
+C:\Users\Mac04\Desktop\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.deps.json
+C:\Users\Mac04\Desktop\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.runtimeconfig.json
+C:\Users\Mac04\Desktop\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.dll
+C:\Users\Mac04\Desktop\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.pdb
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form1.resources
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.GenerateResource.cache
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfoInputs.cache
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfo.cs
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.CoreCompileInputs.cache
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.dll
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\refint\accounting system.dll
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.pdb
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.genruntimeconfig.cache
+C:\Users\Mac04\Desktop\accounting system\accounting system\obj\Debug\net8.0-windows\ref\accounting system.dll
+D:\視窗程式設計\期末專案\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.exe
+D:\視窗程式設計\期末專案\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.deps.json
+D:\視窗程式設計\期末專案\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.runtimeconfig.json
+D:\視窗程式設計\期末專案\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.dll
+D:\視窗程式設計\期末專案\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.pdb
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form1.resources
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.GenerateResource.cache
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.GeneratedMSBuildEditorConfig.editorconfig
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfoInputs.cache
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfo.cs
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.CoreCompileInputs.cache
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.dll
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\refint\accounting system.dll
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.pdb
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.genruntimeconfig.cache
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\ref\accounting system.dll
+D:\視窗程式設計\期末專案\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form2.resources
