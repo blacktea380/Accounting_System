@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\",
+  "WorkspaceRootPath": "C:\\Users\\BlackTea\\Documents\\accounting system\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|d:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|d:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|d:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|d:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\blacktea\\documents\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\blacktea\\documents\\accounting system\\accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|c:\\users\\blacktea\\documents\\accounting system\\accounting system\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3474AB87-3B58-4D6F-9D4A-4B8F00B825E1}|accounting system\\accounting system.csproj|solutionrelative:accounting system\\data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,41 +33,12 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form2.cs",
-              "RelativeDocumentMoniker": "accounting system\\Form2.cs",
-              "ToolTip": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form2.cs",
-              "RelativeToolTip": "accounting system\\Form2.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAwwDMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T02:08:16.773Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form2.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form2.cs",
-              "RelativeDocumentMoniker": "accounting system\\Form2.cs",
-              "ToolTip": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form2.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "accounting system\\Form2.cs [\u8A2D\u8A08]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T01:50:11.204Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Form1.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form1.cs",
               "RelativeDocumentMoniker": "accounting system\\Form1.cs",
-              "ToolTip": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form1.cs [\u8A2D\u8A08]",
+              "ToolTip": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form1.cs [\u8A2D\u8A08]",
               "RelativeToolTip": "accounting system\\Form1.cs [\u8A2D\u8A08]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-05T01:22:27.523Z",
@@ -71,15 +46,53 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form2.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form2.cs",
+              "RelativeDocumentMoniker": "accounting system\\Form2.cs",
+              "ToolTip": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form2.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "accounting system\\Form2.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T01:50:11.204Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form1.cs",
               "RelativeDocumentMoniker": "accounting system\\Form1.cs",
-              "ToolTip": "D:\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\\u671F\u672B\u5C08\u6848\\accounting system\\accounting system\\Form1.cs",
+              "ToolTip": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form1.cs",
               "RelativeToolTip": "accounting system\\Form1.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAAwL4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-28T01:49:07.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form2.cs",
+              "RelativeDocumentMoniker": "accounting system\\Form2.cs",
+              "ToolTip": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Form2.cs",
+              "RelativeToolTip": "accounting system\\Form2.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwC0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T02:08:16.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Data.cs",
+              "DocumentMoniker": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Data.cs",
+              "RelativeDocumentMoniker": "accounting system\\Data.cs",
+              "ToolTip": "C:\\Users\\BlackTea\\Documents\\accounting system\\accounting system\\Data.cs",
+              "RelativeToolTip": "accounting system\\Data.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAIwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T04:19:38.246Z",
               "EditorCaption": ""
             }
           ]

@@ -31,46 +31,63 @@
             listBox1 = new ListBox();
             button1 = new Button();
             delete_but = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // listBox1
             // 
             listBox1.Font = new Font("Microsoft JhengHei UI", 20F);
             listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 67;
-            listBox1.Location = new Point(19, 12);
+            listBox1.ItemHeight = 35;
+            listBox1.Location = new Point(10, 6);
+            listBox1.Margin = new Padding(2, 2, 2, 2);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(2235, 1143);
+            listBox1.Size = new Size(941, 459);
             listBox1.TabIndex = 0;
             // 
             // button1
             // 
             button1.Font = new Font("Microsoft JhengHei UI", 20F);
-            button1.Location = new Point(880, 1211);
+            button1.Location = new Point(440, 606);
+            button1.Margin = new Padding(2, 2, 2, 2);
             button1.Name = "button1";
-            button1.Size = new Size(457, 137);
+            button1.Size = new Size(228, 68);
             button1.TabIndex = 1;
             button1.Text = "回主畫面";
             button1.UseVisualStyleBackColor = true;
             // 
             // delete_but
             // 
-            delete_but.Location = new Point(345, 1211);
+            delete_but.Location = new Point(172, 606);
+            delete_but.Margin = new Padding(2, 2, 2, 2);
             delete_but.Name = "delete_but";
-            delete_but.Size = new Size(372, 137);
+            delete_but.Size = new Size(186, 68);
             delete_but.TabIndex = 2;
             delete_but.Text = "button2";
             delete_but.UseVisualStyleBackColor = true;
             delete_but.Click += delete_but_Click;
             // 
+            // button2
+            // 
+            button2.Font = new Font("Microsoft JhengHei UI", 20F);
+            button2.Location = new Point(388, 470);
+            button2.Name = "button2";
+            button2.Size = new Size(186, 59);
+            button2.TabIndex = 3;
+            button2.Text = "刪除紀錄";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += delete_but_Click;
+            // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(14F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2272, 1416);
+            ClientSize = new Size(962, 530);
+            Controls.Add(button2);
             Controls.Add(delete_but);
             Controls.Add(button1);
             Controls.Add(listBox1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form2";
             Text = "記帳紀錄";
             ResumeLayout(false);
@@ -81,5 +98,6 @@
         private ListBox listBox1;
         private Button button1;
         private Button delete_but;
+        private Button button2;
     }
 }

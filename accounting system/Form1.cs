@@ -1,93 +1,87 @@
-using System.Windows.Forms;
+ï»¿using System;
+using System.Collections.Generic;
 using System.Globalization;
-using System.Runtime.InteropServices;
+using System.IO;
+using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace accounting_system
 {
+
     public partial class Form1 : Form
     {
         List<Data> datas = new List<Data> { };
+
         public Form1()
         {
             InitializeComponent();
-            inorout_box.Items.AddRange(new string[] { "¤ä¥X", "¦¬¤J" });
+
+            inorout_box.Items.AddRange(new string[] { "æ”¯å‡º", "æ”¶å…¥" });
             inorout_box.SelectedIndex = 0;
             inorout_box.DropDownStyle = ComboBoxStyle.DropDownList;
-            type_box.Items.AddRange(new string[] { "¶¼­¹", "¤é±`¥Î«~", "¥æ³q", "¤ô¹q¥Ë´µ", "©Ğ¯²", "¼Æ¦ì", "ÁÊª«", "ªA¹¢", "®T¼Ö", "ÂåÀø", "¨ä¥L" });
+
+            type_box.Items.AddRange(new string[] { "é¤é£²", "ç”Ÿæ´»ç”¨å“", "äº¤é€š", "é€šè¨Šè²»", "å¨›æ¨‚", "æ•™è‚²", "é†«ç™‚", "æœé£¾", "æŠ•è³‡", "æˆ¿ç§Ÿ", "å…¶ä»–" });
             type_box.SelectedIndex = 0;
             type_box.DropDownStyle = ComboBoxStyle.DropDownList;
 
-            StreamReader sr;
-            StreamWriter sw;
+            // ç¢ºä¿ list.txt å­˜åœ¨
             FileInfo list = new FileInfo("list.txt");
             if (!list.Exists)
             {
-                sw = list.CreateText();
-                sw.Close();
+                list.CreateText().Close();
             }
 
-            using (sr = new StreamReader("list.txt"))
+            // è®€å–è³‡æ–™ï¼šç¾åœ¨å¿…é ˆè®€å–äº”å€‹æ¬„ä½ (æ—¥æœŸã€æ”¶æ”¯ã€é¡å‹ã€é‡‘é¡ã€å‚™è¨»)
+            using (StreamReader sr = new StreamReader("list.txt"))
             {
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] parts = line.Split("\t");
-                    if (parts.Length >= 4)
+                    string[] parts = line.Split('\t');
+                    // parts[0]=æ—¥æœŸ, parts[1]=æ”¶æ”¯, parts[2]=é¡å‹, parts[3]=é‡‘é¡, parts[4]=å‚™è¨»
+                    if (parts.Length >= 4 && decimal.TryParse(parts[3], CultureInfo.InvariantCulture, out decimal amount))
                     {
                         string date = parts[0];
                         string income = parts[1];
-                        decimal amount = decimal.Parse(parts[3], CultureInfo.InvariantCulture);
-                        datas.Add(new Data(date, income, amount));
-                    }
+                        string type = parts[2];
+                        string remark = parts.Length > 4 ? parts[4] : "";
 
+                        datas.Add(new Data(date, income, type, amount, remark));
+                    }
                 }
             }
 
+            UpdateBalance(DateTime.Now.Month.ToString());
+        }
+
+        // ç¨ç«‹å‡ºé¤˜é¡æ›´æ–°æ–¹æ³•ï¼Œæ–¹ä¾¿ Form2 è¿”å›å¾Œé‡æ–°å‘¼å«
+        private void UpdateBalance(string targetMonth)
+        {
             decimal bal = 0;
+
             foreach (var data in datas)
             {
-                string[] date = data.date.Split("/");
-                string month = date[1];
-                string curMonth = DateTime.Now.Month.ToString();
-
-                if (month == curMonth)
+                // å˜—è©¦è§£ææ—¥æœŸä»¥ç²å–æœˆä»½ï¼Œä½¿å…¶æ›´å¥å£¯
+                if (DateTime.TryParse(data.date, out DateTime transactionDate))
                 {
-                    if (data.income == "¦¬¤J")
+                    if (transactionDate.Month.ToString() == targetMonth)
                     {
-                        bal += data.amount;
-                    }
-                    else
-                    {
-                        bal -= data.amount;
+                        if (data.income == "æ”¶å…¥")
+                        {
+                            bal += data.amount;
+                        }
+                        else
+                        {
+                            bal -= data.amount;
+                        }
                     }
                 }
-
             }
-
             balance.Text = "$" + bal.ToString();
-
-            sr.Close();
-
         }
 
-        public class Data
-        {
-
-            public string date { get; set; }
-            public string income { get; set; }
-            //string type;
-            public decimal amount { get; set; }
-
-            public Data(string date, string income, decimal amount)
-            {
-                this.date = date;
-                this.income = income;
-                this.amount = amount;
-            }
-        }
         private void amount_box_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //³v¤@ÀË¬d«öÁä¬O§_¬°0-9¡Benter¡Bbackspace
             if (e.KeyChar == (Char)48 || e.KeyChar == (Char)49 ||
                 e.KeyChar == (Char)50 || e.KeyChar == (Char)51 ||
                 e.KeyChar == (Char)52 || e.KeyChar == (Char)53 ||
@@ -97,14 +91,15 @@ namespace accounting_system
             {
                 e.Handled = false;
             }
-            else //¤£¬Oªº¸Ü¡A§â¨ä¾lªº«öÁä³]©w¬°¤w¸g³B²z¹L¤F
+            else
             {
                 e.Handled = true;
             }
         }
+
         private void amount_Click(object sender, EventArgs e)
         {
-            if (amount_box.Text == "½Ğ¿é¤Jª÷ÃB")
+            if (amount_box.Text == "è«‹è¼¸å…¥é‡‘é¡")
             {
                 amount_box.Text = "";
             }
@@ -114,144 +109,61 @@ namespace accounting_system
         {
             string line;
             DateTime selectedDate = dateTimePicker1.Value;
-            StreamWriter sw;
-            line = selectedDate.Year.ToString() + "/" + selectedDate.Month.ToString() + "/" + selectedDate.Day.ToString() + "\t";
-            if (inorout_box.SelectedIndex == 0)
-            {
-                line += "¤ä¥X\t";
-            }
-            else
-            {
-                line += "¦¬¤J\t";
-            }
 
-            switch (type_box.SelectedIndex)
+            // è™•ç†æ—¥æœŸã€æ”¶æ”¯ã€é¡å‹
+            string income = (inorout_box.SelectedIndex == 0 ? "æ”¯å‡º" : "æ”¶å…¥");
+            string type = type_box.Items[type_box.SelectedIndex].ToString();
+            string date = selectedDate.Year.ToString() + "/" + selectedDate.Month.ToString() + "/" + selectedDate.Day.ToString();
+
+            line = date + "\t" + income + "\t" + type + "\t";
+
+            decimal inputAmount;
+            // è™•ç†é‡‘é¡
+            if (amount_box.Text != "" && amount_box.Text != "è«‹è¼¸å…¥é‡‘é¡" && decimal.TryParse(amount_box.Text, out inputAmount))
             {
-                case 0:
-                    line += "¶¼­¹\t";
-                    break;
-                case 1:
-                    line += "¤é±`¥Î«~\t";
-                    break;
-                case 2:
-                    line += "¥æ³q\t";
-                    break;
-                case 3:
-                    line += "¤ô¹q¥Ë´µ\t";
-                    break;
-                case 4:
-                    line += "©Ğ¯²\t";
-                    break;
-                case 5:
-                    line += "¼Æ¦ì\t";
-                    break;
-                case 6:
-                    line += "ÁÊª«\t";
-                    break;
-                case 7:
-                    line += "ªA¹¢\t";
-                    break;
-                case 8:
-                    line += "®T¼Ö\t";
-                    break;
-                case 9:
-                    line += "ÂåÀø\t";
-                    break;
-                case 10:
-                    line += "¨ä¥L\t";
-                    break;
-            }
-            if (amount_box.Text != "" && amount_box.Text != "½Ğ¿é¤Jª÷ÃB")
-            {
-                line += amount_box.Text + "\t";
+                line += inputAmount.ToString() + "\t";
             }
             else
             {
-                MessageBox.Show("½Ğ¿é¤Jª÷ÃB!");
+                MessageBox.Show("è«‹è¼¸å…¥æœ‰æ•ˆé‡‘é¡!");
                 return;
             }
-            if (remark_box.Text != "³Æµù" && remark_box.Text != "")
-            {
-                line += remark_box.Text;
-            }
 
-            using (sw = new StreamWriter("list.txt", append: true))
+            // è™•ç†å‚™è¨»
+            string remarkText = (remark_box.Text != "å‚™è¨»" && remark_box.Text != "") ? remark_box.Text : "";
+            line += remarkText;
+
+            // å¯«å…¥æª”æ¡ˆ
+            using (StreamWriter sw = new StreamWriter("list.txt", append: true))
             {
                 sw.WriteLine(line);
             }
 
+            // æ›´æ–° datas List
+            datas.Add(new Data(date, income, type, inputAmount, remarkText));
 
-            string[] parts = line.Split("\t");
-            if (parts.Length >= 4)
-            {
-                string date = parts[0];
-                string income = parts[1];
-                decimal amount = decimal.Parse(parts[3], CultureInfo.InvariantCulture);
-                datas.Add(new Data(date, income, amount));
-            }
-
-            decimal bal = 0;
-            foreach (var data in datas)
-            {
-                string[] date = data.date.Split("/");
-                string month = date[1];
-                string curMonth = DateTime.Now.Month.ToString();
-
-                if (month == curMonth)
-                {
-                    if (data.income == "¦¬¤J")
-                    {
-                        bal += data.amount;
-                    }
-                    else
-                    {
-                        bal -= data.amount;
-                    }
-                }
-
-            }
-
-            balance.Text = "$" + bal.ToString();
-
+            UpdateBalance(DateTime.Now.Month.ToString());
         }
 
         private void remark_box_click(object sender, EventArgs e)
         {
-            if (remark_box.Text == "³Æµù")
+            if (remark_box.Text == "å‚™è¨»")
                 remark_box.Text = "";
         }
 
         private void list_but_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            DialogResult res;
-            res = f2.ShowDialog();
+            // ä¿®æ­£ï¼šå‚³éç•¶å‰çš„ datas åˆ—è¡¨çµ¦ Form2
+            Form2 f2 = new Form2(this.datas);
+            DialogResult res = f2.ShowDialog();
+
+            // å¾ Form2 è¿”å›å¾Œï¼Œé‡æ–°è¨ˆç®—é¤˜é¡ (å› ç‚º Form2 å¯èƒ½åˆªé™¤äº†è³‡æ–™)
+            UpdateBalance(DateTime.Now.Month.ToString());
         }
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            decimal bal = 0;
-            foreach (var data in datas)
-            {
-                string[] date = data.date.Split("/");
-                string month = date[1];
-                string curMonth = dateTimePicker1.Value.Month.ToString();
-
-                if (month == curMonth)
-                {
-                    if (data.income == "¦¬¤J")
-                    {
-                        bal += data.amount;
-                    }
-                    else
-                    {
-                        bal -= data.amount;
-                    }
-                }
-
-            }
-
-            balance.Text = "$" + bal.ToString();
+            UpdateBalance(dateTimePicker1.Value.Month.ToString());
         }
     }
 }
