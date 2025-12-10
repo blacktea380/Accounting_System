@@ -52,14 +52,19 @@ C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0
 C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.runtimeconfig.json
 C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.dll
 C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0-windows\accounting system.pdb
+C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\BlackTea\Documents\accounting system\accounting system\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.AssemblyReference.cache
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form1.resources
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form2.resources
+C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting_system.Form3.resources
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.GenerateResource.cache
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfoInputs.cache
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.AssemblyInfo.cs
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.csproj.CoreCompileInputs.cache
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.sourcelink.json
+C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounti.5E94C158.Up2Date
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.dll
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\refint\accounting system.dll
 C:\Users\BlackTea\Documents\accounting system\accounting system\obj\Debug\net8.0-windows\accounting system.pdb

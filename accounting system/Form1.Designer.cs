@@ -37,13 +37,14 @@
             inorout_box = new ComboBox();
             list_but = new Button();
             dateTimePicker1 = new DateTimePicker();
+            chart_but = new Button();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft JhengHei UI", 30F);
-            label1.Location = new Point(506, 40);
+            label1.Location = new Point(549, 40);
             label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
             label1.Size = new Size(142, 50);
@@ -52,11 +53,12 @@
             // 
             // balance
             // 
+            balance.AutoSize = true;
             balance.Font = new Font("Microsoft JhengHei UI", 30F);
-            balance.Location = new Point(506, 90);
+            balance.Location = new Point(549, 90);
             balance.Margin = new Padding(2, 0, 2, 0);
             balance.Name = "balance";
-            balance.Size = new Size(142, 51);
+            balance.Size = new Size(68, 50);
             balance.TabIndex = 1;
             balance.Text = "$0";
             balance.TextAlign = ContentAlignment.MiddleCenter;
@@ -64,8 +66,8 @@
             // amount_box
             // 
             amount_box.Font = new Font("Microsoft JhengHei UI", 20F);
-            amount_box.Location = new Point(411, 154);
-            amount_box.Margin = new Padding(2, 2, 2, 2);
+            amount_box.Location = new Point(454, 154);
+            amount_box.Margin = new Padding(2);
             amount_box.Name = "amount_box";
             amount_box.Size = new Size(224, 41);
             amount_box.TabIndex = 3;
@@ -77,8 +79,8 @@
             // remark_box
             // 
             remark_box.Font = new Font("Microsoft JhengHei UI", 20F);
-            remark_box.Location = new Point(651, 154);
-            remark_box.Margin = new Padding(2, 2, 2, 2);
+            remark_box.Location = new Point(694, 154);
+            remark_box.Margin = new Padding(2);
             remark_box.Name = "remark_box";
             remark_box.Size = new Size(248, 41);
             remark_box.TabIndex = 4;
@@ -91,8 +93,8 @@
             type_box.DropDownStyle = ComboBoxStyle.DropDownList;
             type_box.Font = new Font("Microsoft JhengHei UI", 20F);
             type_box.FormattingEnabled = true;
-            type_box.Location = new Point(233, 154);
-            type_box.Margin = new Padding(2, 2, 2, 2);
+            type_box.Location = new Point(276, 154);
+            type_box.Margin = new Padding(2);
             type_box.Name = "type_box";
             type_box.RightToLeft = RightToLeft.No;
             type_box.Size = new Size(162, 43);
@@ -101,8 +103,8 @@
             // input_but
             // 
             input_but.Font = new Font("Microsoft JhengHei UI", 20F);
-            input_but.Location = new Point(915, 154);
-            input_but.Margin = new Padding(2, 2, 2, 2);
+            input_but.Location = new Point(958, 154);
+            input_but.Margin = new Padding(2);
             input_but.Name = "input_but";
             input_but.Size = new Size(130, 38);
             input_but.TabIndex = 6;
@@ -115,8 +117,8 @@
             inorout_box.DropDownStyle = ComboBoxStyle.DropDownList;
             inorout_box.Font = new Font("Microsoft JhengHei UI", 20F);
             inorout_box.FormattingEnabled = true;
-            inorout_box.Location = new Point(108, 154);
-            inorout_box.Margin = new Padding(2, 2, 2, 2);
+            inorout_box.Location = new Point(151, 154);
+            inorout_box.Margin = new Padding(2);
             inorout_box.Name = "inorout_box";
             inorout_box.Size = new Size(110, 43);
             inorout_box.TabIndex = 7;
@@ -124,8 +126,8 @@
             // list_but
             // 
             list_but.Font = new Font("Microsoft JhengHei UI", 20F);
-            list_but.Location = new Point(512, 428);
-            list_but.Margin = new Padding(2, 2, 2, 2);
+            list_but.Location = new Point(454, 476);
+            list_but.Margin = new Padding(2);
             list_but.Name = "list_but";
             list_but.Size = new Size(136, 38);
             list_but.TabIndex = 8;
@@ -136,19 +138,32 @@
             // dateTimePicker1
             // 
             dateTimePicker1.Font = new Font("Microsoft JhengHei UI", 20F);
-            dateTimePicker1.Location = new Point(458, 242);
-            dateTimePicker1.Margin = new Padding(2, 2, 2, 2);
+            dateTimePicker1.Location = new Point(501, 242);
+            dateTimePicker1.Margin = new Padding(2);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.RightToLeft = RightToLeft.No;
             dateTimePicker1.Size = new Size(240, 41);
             dateTimePicker1.TabIndex = 10;
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
+            // chart_but
+            // 
+            chart_but.Font = new Font("Microsoft JhengHei UI", 20F);
+            chart_but.Location = new Point(656, 476);
+            chart_but.Name = "chart_but";
+            chart_but.Size = new Size(134, 38);
+            chart_but.TabIndex = 11;
+            chart_but.Text = "本月圖表";
+            chart_but.UseVisualStyleBackColor = true;
+            chart_but.Click += chart_but_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(1238, 626);
+            Controls.Add(chart_but);
             Controls.Add(dateTimePicker1);
             Controls.Add(list_but);
             Controls.Add(inorout_box);
@@ -158,7 +173,7 @@
             Controls.Add(amount_box);
             Controls.Add(balance);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "記帳系統";
             Click += remark_box_click;
@@ -177,5 +192,6 @@
         private ComboBox inorout_box;
         private Button list_but;
         private DateTimePicker dateTimePicker1;
+        private Button chart_but;
     }
 }

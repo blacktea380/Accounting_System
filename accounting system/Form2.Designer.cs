@@ -40,16 +40,17 @@
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 35;
             listBox1.Location = new Point(10, 6);
-            listBox1.Margin = new Padding(2, 2, 2, 2);
+            listBox1.Margin = new Padding(2);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(941, 459);
             listBox1.TabIndex = 0;
+            listBox1.KeyDown += listBox1_KeyDown;
             // 
             // button1
             // 
             button1.Font = new Font("Microsoft JhengHei UI", 20F);
             button1.Location = new Point(440, 606);
-            button1.Margin = new Padding(2, 2, 2, 2);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
             button1.Size = new Size(228, 68);
             button1.TabIndex = 1;
@@ -59,7 +60,7 @@
             // delete_but
             // 
             delete_but.Location = new Point(172, 606);
-            delete_but.Margin = new Padding(2, 2, 2, 2);
+            delete_but.Margin = new Padding(2);
             delete_but.Name = "delete_but";
             delete_but.Size = new Size(186, 68);
             delete_but.TabIndex = 2;
@@ -87,9 +88,10 @@
             Controls.Add(delete_but);
             Controls.Add(button1);
             Controls.Add(listBox1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form2";
             Text = "記帳紀錄";
+            KeyDown += Form2_KeyDown;
             ResumeLayout(false);
         }
 
